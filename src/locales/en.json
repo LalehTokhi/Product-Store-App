@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "cart": "Cart",
+    "settings": "Settings"
+  },
+  "productCard": {
+    "quickView": "Quick View",
+    "addToCart": "Add to Cart"
+  },
+  "productList": {
+    "errorTitle": "Error loading products",
+    "retry": "Retry"
+  },
+  "cart": {
+    "emptyTitle": "Your cart is empty!",
+    "emptyMsg": "Add some products to your cart.",
+    "title": "Shopping Cart",
+    "clearCart": "Clear Cart",
+    "totalItems": "Total items:",
+    "subtotal": "Subtotal:",
+    "totalAmount": "Total amount:",
+    "checkout": "Checkout"
+  },
+  "cartItem": {
+    "remove": "Remove"
+  },
+  "productDetails": {
+    "backToShop": "Back to Shop",
+    "addToCart": "Add to Cart",
+    "features": "Product Features:",
+    "authenticity": "Authenticity Guarantee",
+    "fastShipping": "Fast Shipping",
+    "returnPolicy": "7-day Return Policy",
+    "support": "24/7 Support",
+    "reviews": "reviews"
+  },
+  "settings": {
+    "title": "App Settings",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "viewMode": "Product View",
+    "gridView": "Grid View",
+    "listView": "List View",
+    "categories": "Categories",
+    "allProducts": "All Products",
+    "mensClothing": "Men's Clothing",
+    "womensClothing": "Women's Clothing",
+    "electronics": "Electronics",
+    "jewelry": "Jewelry",
+    "language": "Language",
+    "persian": "Persian",
+    "english": "English",
+    "savedInfo": "Saved Info",
+    "savedTheme": "Theme and view settings are saved in browser",
+    "savedCart": "Your cart is saved in localStorage",
+    "savedCache": "Products are cached with React Query"
+  },
+  "loading": "Loading products...",
+  "toastAdded": "✓ Added to cart",
+  "alertAdded": "Product added to cart!"
+}

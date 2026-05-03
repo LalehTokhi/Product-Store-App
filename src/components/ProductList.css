@@ -1,0 +1,52 @@
+.product-list-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.products-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.products-grid.grid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.products-grid.list {
+  grid-template-columns: 1fr;
+}
+
+.error-container {
+  text-align: center;
+  padding: 50px;
+  background: var(--card-bg);
+  border-radius: 15px;
+  margin: 50px;
+}
+
+.error-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.error-container h3 {
+  color: #ff4757;
+  margin-bottom: 1rem;
+}
+
+.error-container button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px;
+  color: var(--text-secondary);
+}

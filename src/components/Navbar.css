@@ -1,0 +1,98 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* حالت لایت: نوار تیره‌تر از پس‌زمینه صفحه */
+.app.light .navbar {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* حالت دارک: نوار روشن‌تر از پس‌زمینه صفحه */
+.app.dark .navbar {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--accent), var(--text-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 48px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-btn:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+.nav-btn.active {
+  background: var(--accent);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.cart-badge {
+  background: #ff4757;
+  color: white;
+  border-radius: 30px;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  margin-left: 4px;
+}
+
+.theme-toggle {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.theme-toggle:hover {
+  background: var(--accent);
+  transform: rotate(20deg);
+}
