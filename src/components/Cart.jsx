@@ -29,8 +29,8 @@ const Cart = () => {
         </button>
       </div>
       <div className="cart-items">
-        {items.map((item) => (
-          <CartItem key={item.id} item={item} />
+        {items.map((item, idx) => (
+          <CartItem key={item.id} item={item} index={idx} />
         ))}
       </div>
       <div className="cart-summary">

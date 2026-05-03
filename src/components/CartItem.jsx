@@ -4,17 +4,27 @@ import { increaseQuantity, decreaseQuantity, removeFromCart } from '../redux/car
 import { useLanguage } from '../context/LanguageContext';
 import './CartItem.css';
 
-const CartItem = ({ item }) => {
+const CartItem = ({ item, index }) => {
   const dispatch = useDispatch();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const getTranslatedTitle = () => {
+    if (language === 'fa') {
+      const translated = t(`productTitlesById.${item.id}`);
+      if (translated && translated !== `productTitlesById.${item.id}`) {
+        return translated;
+      }
+    }
+    return item.title;
+  };
 
   return (
-    <div className="cart-item">
+    <div className={`cart-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
       <div className="cart-item-image">
         <img src={item.image} alt={item.title} />
       </div>
       <div className="cart-item-info">
-        <h3>{item.title}</h3>
+        <h3>{getTranslatedTitle()}</h3>
         <p className="cart-item-price">${item.price}</p>
       </div>
       <div className="cart-item-quantity">
